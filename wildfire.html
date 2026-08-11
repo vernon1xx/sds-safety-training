@@ -59,7 +59,7 @@
   </header>
   <div class="bar"><span id="prog"></span></div>
   <main id="main"></main>
-  <footer id="ftr">SDS Lumber Company LLC · Bingen, WA · WAC 296-820-825 · Module v1.2 (2026)</footer>
+  <footer id="ftr">SDS Lumber Company LLC · Bingen, WA · WAC 296-820-825 · Module v1.3 (2026)</footer>
 </div>
 
 <script>
@@ -109,25 +109,27 @@ en: {
    opts:['Tough it out until the end of shift','Tell his supervisor he is having symptoms','Take a break without telling anyone','Go home without telling anyone'], a:1,
    why:'Right. Reporting symptoms to your supervisor triggers SDS\u2019s response plan — and you cannot be punished for reporting.' },
  { t:'content', eyebrow:'Section 4 of 8', title:'Smoke Action Levels', html:`
-   <p>SDS follows a 5-level response system based on the current PM2.5:</p>
+   <p>SDS follows a 6-level response system based on the current PM2.5:</p>
    <div class="ladder">
      <div class="rung"><div class="lvl" style="background:var(--amber)">Level 1<small>20.5 µg/m³ · AQI ~72</small></div><div class="act">Rule kicks in. Training, two-way hazard communication, N95/KN95 available on request.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--orange)">Level 2<small>35.5 µg/m³ · AQI ~101</small></div><div class="act">Respirators provided to ALL employees for voluntary use.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--red)">Level 3<small>55.5 µg/m³ · AQI ~151</small></div><div class="act">Feasible exposure controls required — moving work, schedule changes, more breaks.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--red)">Level 4<small>150.5 µg/m³ · AQI ~201</small></div><div class="act">Additional exposure controls; close monitoring of conditions and workers.</div></div>
-     <div class="rung"><div class="lvl" style="background:var(--maroon)">Level 5<small>500.4 µg/m³ · AQI 849+</small></div><div class="act">Respirator use MANDATORY under the full Respiratory Protection Program.</div></div>
+     <div class="rung"><div class="lvl" style="background:var(--maroon)">Level 5<small>250.5 µg/m³ · AQI ~351</small></div><div class="act">A respirator is handed DIRECTLY to every exposed employee. Anyone with symptoms needing medical attention is moved to clean air.</div></div>
+     <div class="rung"><div class="lvl" style="background:#4A1010">Level 6<small>500.4 µg/m³ · AQI 849+</small></div><div class="act">Respirator use MANDATORY under the full Respiratory Protection Program. Above 555 µg/m³, heavier P100 respirators are required.</div></div>
    </div>`},
  { t:'content', eyebrow:'Section 5 of 8', title:'How SDS Monitors Smoke Levels', html:`
-   <p>SDS Lumber\u2019s <b>primary</b> method is an <b>on-site direct-reading particulate sensor</b> that measures the actual PM2.5 at the mill. If the sensor is unavailable, the <b>backup</b> is the EPA AirNow reading (airnow.gov) for the Bingen/White Salmon area.</p>
+   <p>SDS Lumber\u2019s <b>official method</b> is the <b>EPA AirNow reading (airnow.gov)</b> \u2014 the NowCast PM2.5 and AQI for the <b>Bingen/White Salmon area</b>. That is the number SDS uses to decide which protections apply.</p>
+   <p>SDS also runs an <b>on-site particulate sensor</b> at the mill for real-time awareness. It helps us act early when smoke rolls in, but the AirNow reading is the official one.</p>
    <p>Levels are checked before each outdoor shift, and at least every two hours when PM2.5 is 20.5 µg/m³ or more.</p>
    <p><b>How you will know the current level:</b></p>
    <ul><li>Crew safety meeting announcements at the start of shift during smoke events, and updates when conditions change</li>
    <li>Posted air quality updates at the <b>break rooms and time clocks</b></li>
    <li>Radio or verbal communication during the shift</li>
    <li>You can ask your supervisor or the Safety Lead for the current PM2.5 at any time</li></ul>`},
- { t:'check', q:'What is SDS Lumber\u2019s PRIMARY method for determining the PM2.5 level at the mill?',
-   opts:['A guess based on visibility','The on-site direct-reading particulate sensor','The nightly news','A coin flip'], a:1,
-   why:'Correct. The on-site sensor is primary; EPA AirNow for Bingen/White Salmon is the backup.' },
+ { t:'check', q:'What is SDS Lumber\u2019s OFFICIAL method for determining the current PM2.5?',
+   opts:['A guess based on visibility','The EPA AirNow reading for Bingen/White Salmon','The nightly news','A coin flip'], a:1,
+   why:'Correct. EPA AirNow (airnow.gov) for the Bingen/White Salmon area is the official number. The on-site sensor is a helpful extra.' },
  { t:'content', eyebrow:'Section 6 of 8', title:'How SDS Reduces Your Exposure', html:`
    <p>Starting at Level 3 (55.5 µg/m³), SDS implements feasible exposure controls — and uses them earlier when practical:</p>
    <ul><li>Relocating work indoors or enclosing work areas where possible</li>
@@ -137,6 +139,7 @@ en: {
    <p>Not every job at a sawmill can move indoors — that\u2019s why respirators and symptom monitoring matter too.</p>`},
  { t:'content', eyebrow:'Section 7 of 8', title:'N95 / KN95 Respirators', html:`
    <p><b>N95 and KN95 filtering-facepiece respirators are stocked on-site</b> and available at no cost — ask your supervisor. At Level 2 (35.5 µg/m³) and above, SDS provides them to all employees for voluntary use.</p>
+   <p>At <b>Level 5 (250.5 µg/m³)</b> and above, a respirator must be placed <b>directly in your hand</b> — you won't have to go looking for one. Wearing it is still your choice until Level 6.</p>
    <p><b>Using one correctly (voluntary use):</b></p>
    <ul><li>Cover your nose and mouth; mold the metal strip to your nose bridge</li>
    <li>Both straps on — one above the ears, one below</li>
@@ -160,7 +163,7 @@ en: {
   { q:'The most hazardous component of wildfire smoke is:', opts:['Carbon dioxide','PM2.5 fine particles','Water vapor','Pollen'], a:1 },
   { q:'At what PM2.5 level does the wildfire smoke rule kick in (training, communication, respirators on request)?', opts:['20.5 µg/m³','100 µg/m³','250.5 µg/m³','500.4 µg/m³'], a:0 },
   { q:'Which of these is a symptom of wildfire smoke exposure?', opts:['Chest tightness and trouble breathing','Burning, watery eyes','Persistent cough and wheezing','All of these'], a:3 },
-  { q:'What is SDS Lumber\u2019s primary method for determining the current PM2.5?', opts:['On-site direct-reading particulate sensor','Guessing from how hazy it looks','The weather channel','A monitor in Portland'], a:0 },
+  { q:'What is SDS Lumber\u2019s official method for determining the current PM2.5?', opts:['The EPA AirNow reading for the Bingen/White Salmon area','Guessing from how hazy it looks','The weather channel','Whatever the radio says'], a:0 },
   { q:'How will you find out the current smoke level during a smoke event?', opts:['Shift-start crew meeting announcements and postings at break rooms/time clocks','You have to figure it out yourself','It is a secret','Posted once a month'], a:0 },
   { q:'At Level 2 (35.5 µg/m³), SDS must:', opts:['Send everyone home immediately','Provide N95/KN95 respirators to ALL employees for voluntary use','Do nothing until 500 µg/m³','Only protect office workers'], a:1 },
   { q:'Feasible exposure controls (relocating work, schedule changes, more breaks) are formally required starting at:', opts:['Level 3 — 55.5 µg/m³','Level 1 — 20.5 µg/m³','Only at 500.4 µg/m³','Never'], a:0 },
@@ -210,25 +213,27 @@ es: {
    opts:['Aguantar hasta el final del turno','Avisar a su supervisor que tiene síntomas','Tomar un descanso sin avisar a nadie','Irse a casa sin avisar a nadie'], a:1,
    why:'Correcto. Reportar los síntomas a su supervisor activa el plan de respuesta de SDS — y no puede ser castigado por reportar.' },
  { t:'content', eyebrow:'Sección 4 de 8', title:'Niveles de Acción por Humo', html:`
-   <p>SDS sigue un sistema de respuesta de 5 niveles basado en el PM2.5 actual:</p>
+   <p>SDS sigue un sistema de respuesta de 6 niveles basado en el PM2.5 actual:</p>
    <div class="ladder">
      <div class="rung"><div class="lvl" style="background:var(--amber)">Nivel 1<small>20.5 µg/m³ · AQI ~72</small></div><div class="act">Aplica la regla. Capacitación, comunicación de peligros, N95/KN95 disponibles a solicitud.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--orange)">Nivel 2<small>35.5 µg/m³ · AQI ~101</small></div><div class="act">Respiradores proporcionados a TODOS los empleados para uso voluntario.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--red)">Nivel 3<small>55.5 µg/m³ · AQI ~151</small></div><div class="act">Controles de exposición factibles requeridos — reubicar trabajo, cambios de horario, más descansos.</div></div>
      <div class="rung"><div class="lvl" style="background:var(--red)">Nivel 4<small>150.5 µg/m³ · AQI ~201</small></div><div class="act">Controles adicionales; monitoreo constante de las condiciones y de los trabajadores.</div></div>
-     <div class="rung"><div class="lvl" style="background:var(--maroon)">Nivel 5<small>500.4 µg/m³ · AQI 849+</small></div><div class="act">Uso de respirador OBLIGATORIO bajo el Programa completo de Protección Respiratoria.</div></div>
+     <div class="rung"><div class="lvl" style="background:var(--maroon)">Nivel 5<small>250.5 µg/m³ · AQI ~351</small></div><div class="act">Se entrega un respirador DIRECTAMENTE a cada empleado expuesto. Quien tenga síntomas que requieran atención médica es trasladado a aire limpio.</div></div>
+     <div class="rung"><div class="lvl" style="background:#4A1010">Nivel 6<small>500.4 µg/m³ · AQI 849+</small></div><div class="act">Uso de respirador OBLIGATORIO bajo el Programa completo de Protección Respiratoria. Por encima de 555 µg/m³ se requieren respiradores más pesados (filtros P100).</div></div>
    </div>`},
  { t:'content', eyebrow:'Sección 5 de 8', title:'Cómo SDS Monitorea los Niveles de Humo', html:`
-   <p>El método <b>principal</b> de SDS Lumber es un <b>sensor de partículas de lectura directa en el sitio</b> que mide el PM2.5 real en el aserradero. Si el sensor no está disponible, el <b>respaldo</b> es la lectura de EPA AirNow (airnow.gov) para el área de Bingen/White Salmon.</p>
+   <p>El <b>método oficial</b> de SDS Lumber es la <b>lectura de EPA AirNow (airnow.gov)</b> — el PM2.5 y AQI NowCast para el área de <b>Bingen/White Salmon</b>. Ese es el número que SDS usa para decidir qué protecciones aplican.</p>
+   <p>SDS también tiene un <b>sensor de partículas en el sitio</b> para conocer las condiciones en tiempo real. Ayuda a actuar antes cuando llega el humo, pero la lectura de AirNow es la oficial.</p>
    <p>Los niveles se verifican antes de cada turno al aire libre, y al menos cada dos horas cuando el PM2.5 es de 20.5 µg/m³ o más.</p>
    <p><b>Cómo sabrá usted el nivel actual:</b></p>
    <ul><li>Anuncios en la reunión de seguridad al inicio del turno durante eventos de humo, y actualizaciones cuando cambian las condiciones</li>
    <li>Avisos publicados en los <b>comedores y relojes de entrada</b></li>
    <li>Comunicación por radio o verbal durante el turno</li>
    <li>Puede preguntar a su supervisor o al Líder de Seguridad el PM2.5 actual en cualquier momento</li></ul>`},
- { t:'check', q:'¿Cuál es el método PRINCIPAL de SDS Lumber para determinar el nivel de PM2.5 en el aserradero?',
-   opts:['Adivinar según la visibilidad','El sensor de partículas de lectura directa en el sitio','Las noticias de la noche','Lanzar una moneda'], a:1,
-   why:'Correcto. El sensor en el sitio es el método principal; EPA AirNow para Bingen/White Salmon es el respaldo.' },
+ { t:'check', q:'¿Cuál es el método OFICIAL de SDS Lumber para determinar el PM2.5 actual?',
+   opts:['Adivinar según la visibilidad','La lectura de EPA AirNow para Bingen/White Salmon','Las noticias de la noche','Lanzar una moneda'], a:1,
+   why:'Correcto. EPA AirNow (airnow.gov) para el área de Bingen/White Salmon es el número oficial. El sensor en el sitio es una ayuda adicional.' },
  { t:'content', eyebrow:'Sección 6 de 8', title:'Cómo SDS Reduce Su Exposición', html:`
    <p>A partir del Nivel 3 (55.5 µg/m³), SDS implementa controles de exposición factibles — y los usa antes cuando es práctico:</p>
    <ul><li>Reubicar el trabajo bajo techo o encerrar áreas de trabajo cuando sea posible</li>
@@ -238,6 +243,7 @@ es: {
    <p>No todo trabajo en un aserradero puede hacerse bajo techo — por eso también importan los respiradores y la vigilancia de síntomas.</p>`},
  { t:'content', eyebrow:'Sección 7 de 8', title:'Respiradores N95 / KN95', html:`
    <p><b>Los respiradores N95 y KN95 están disponibles en el sitio</b> sin costo — pídalos a su supervisor. En el Nivel 2 (35.5 µg/m³) y superior, SDS los proporciona a todos los empleados para uso voluntario.</p>
+   <p>En el <b>Nivel 5 (250.5 µg/m³)</b> y superior, se le debe entregar un respirador <b>directamente en la mano</b> — no tendrá que ir a buscarlo. Usarlo sigue siendo su decisión hasta el Nivel 6.</p>
    <p><b>Cómo usarlo correctamente (uso voluntario):</b></p>
    <ul><li>Cubra su nariz y boca; moldee la tira metálica sobre el puente de la nariz</li>
    <li>Ambas bandas puestas — una arriba de las orejas, otra abajo</li>
@@ -261,7 +267,7 @@ es: {
   { q:'El componente más peligroso del humo de incendios forestales es:', opts:['Dióxido de carbono','Las partículas finas PM2.5','Vapor de agua','Polen'], a:1 },
   { q:'¿A qué nivel de PM2.5 empieza a aplicar la regla de humo (capacitación, comunicación, respiradores a solicitud)?', opts:['20.5 µg/m³','100 µg/m³','250.5 µg/m³','500.4 µg/m³'], a:0 },
   { q:'¿Cuál de estos es un síntoma de exposición al humo de incendios?', opts:['Opresión en el pecho y dificultad para respirar','Ojos ardientes y llorosos','Tos persistente y sibilancias','Todos los anteriores'], a:3 },
-  { q:'¿Cuál es el método principal de SDS Lumber para determinar el PM2.5 actual?', opts:['El sensor de partículas de lectura directa en el sitio','Adivinar por lo brumoso que se ve','El canal del clima','Un monitor en Portland'], a:0 },
+  { q:'¿Cuál es el método oficial de SDS Lumber para determinar el PM2.5 actual?', opts:['La lectura de EPA AirNow para el área de Bingen/White Salmon','Adivinar por lo brumoso que se ve','El canal del clima','Lo que diga la radio'], a:0 },
   { q:'¿Cómo sabrá usted el nivel actual de humo durante un evento de humo?', opts:['Anuncios en la reunión de inicio de turno y avisos en comedores/relojes de entrada','Tiene que averiguarlo usted solo','Es un secreto','Se publica una vez al mes'], a:0 },
   { q:'En el Nivel 2 (35.5 µg/m³), SDS debe:', opts:['Mandar a todos a casa de inmediato','Proporcionar respiradores N95/KN95 a TODOS los empleados para uso voluntario','No hacer nada hasta 500 µg/m³','Proteger solo al personal de oficina'], a:1 },
   { q:'Los controles de exposición factibles (reubicar trabajo, cambios de horario, más descansos) se exigen formalmente a partir de:', opts:['Nivel 3 — 55.5 µg/m³','Nivel 1 — 20.5 µg/m³','Solo a 500.4 µg/m³','Nunca'], a:0 },
