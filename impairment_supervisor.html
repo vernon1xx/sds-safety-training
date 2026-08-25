@@ -60,7 +60,7 @@
   </header>
   <div class="bar"><span id="prog"></span></div>
   <main id="main"></main>
-  <footer>SDS Lumber Company LLC · Bingen, WA · Fire Protection Impairment Program · Supervisor Module v1.0 (2026)</footer>
+  <footer>SDS Lumber Company LLC · Bingen, WA · Fire Protection Impairment Program · Supervisor Module v1.1 (2026)</footer>
 </div>
 
 <script>
@@ -75,7 +75,7 @@ const slides = [
   <p>There are two kinds, and they are handled differently:</p>
   <table class="mini">
   <tr><th>Type</th><th>What it is</th></tr>
-  <tr><td><b>Planned</b></td><td>Known in advance and scheduled — maintenance, testing, modification, or taking a system down to permit hot work near it. Controlled <b>before</b> it begins.</td></tr>
+  <tr><td><b>Planned</b></td><td>Known in advance and scheduled — maintenance, testing, or modification. Protection is <b>never</b> taken down to permit hot work. Controlled <b>before</b> it begins.</td></tr>
   <tr><td><b>Emergency</b></td><td>Unplanned — a break, freeze, or failure. Same controls, executed reactively, with restoring protection treated as urgent.</td></tr>
   </table>
   <div class="card warn">Impairment authority at SDS Lumber is top-down on purpose. The <b>Impairment Coordinator is the Mill Superintendent (Brian Weir)</b>, with the <b>Maintenance Manager (Mike Dennis) as alternate</b>. No fire protection system comes out of service without that authorization.</div>` },
@@ -105,15 +105,15 @@ const slides = [
   <table class="mini">
   <tr><th>Precaution</th><th>Why</th></tr>
   <tr><td><b>Fire watch posted</b> in and around the affected area</td><td>A person, not a system, is now the detection layer</td></tr>
-  <tr><td><b>No hot work</b> in the affected area while impaired</td><td>Removes the most common ignition source while protection is down</td></tr>
+  <tr><td><b>No hot work</b> in any area whose fire protection is impaired — no permit issued or in effect</td><td>Removes the most common ignition source while protection is down</td></tr>
   <tr><td><b>Extra extinguishers staged</b> in the area</td><td>First-response capability with the sprinklers out</td></tr>
   <tr><td><b>Housekeeping tightened</b> — combustibles removed, ignition sources controlled</td><td>Less fuel, fewer ways to start a fire</td></tr>
   <tr><td>Impaired area and duration kept <b>as small and short as practicable</b></td><td>Every extra minute and square foot is added exposure</td></tr>
   </table>
-  <div class="card warn"><b>Hot work and impairment are linked.</b> If a system is taken down <i>to allow</i> hot work near it, the Hot Work Permit and this program are coordinated together — and hot work in an <i>already</i>-impaired area is not permitted. See the Hot Work Program.</div>` },
+  <div class="card warn"><b>Hot work and impairment do not mix.</b> Our insurer (PRMA) allows no Hot Work Permit process while protection is impaired. A system is never taken down <i>to allow</i> hot work near it — find another method, or the hot work waits until the system is restored. Fire <i>detection</i> may be isolated in a hot work area to prevent nuisance alarms; <i>suppression</i> never is. See the Hot Work Program.</div>` },
 
 { t:'content', eyebrow:'Section 5 of 6', title:'Isolation, Restoration, and "Mobile 17"', html:
-  `<p>The physical work of isolating and restoring fire protection systems — operating sprinkler control valves, fire pump controls, and water supply valves — is performed by <b>Maintenance / Millwrights</b>, at the direction of the Impairment Coordinator.</p>
+  `<p>The physical work of isolating and restoring fire protection systems — operating sprinkler control valves, fire pump controls, and water supply valves — is performed by <b>Maintenance / Millwrights</b>, at the direction of the Impairment Coordinator. The <b>Truck Shop Supervisor</b> owns the fire pump and reports any pump condition that reduces protection as an impairment.</p>
   <div class="notice">The on-duty millwrights are reached by radio call sign <b>"Mobile 17."</b> Both supervisors and the Emergency Coordinator can raise them. This is the same crew named in the Emergency Action and Fire Prevention Plan for operating fire-water valves during a fire.</div>
   <p><b>What that means for you:</b></p>
   <ul>
@@ -130,7 +130,7 @@ const slides = [
   <li>Millwrights complete the work and reopen the system — valves confirmed in the normal open position and secured as required.</li>
   <li>The system is <b>tested</b> to confirm it is operational (for example, a main drain or flow test on a sprinkler system, or a pump run test).</li>
   <li>The <b>Impairment Coordinator verifies</b> the system is fully restored and authorizes tag removal.</li>
-  <li>Notifications made when protection went down are <b>cleared</b> — the insurer (PRMA), the fire department, and the Emergency Coordinator are told the system is back.</li>
+  <li>Notifications made when protection went down are <b>cleared</b> — the insurer (PRMA), the fire department, and the Emergency Coordinator are told the system is back. (The Coordinator sends PRMA's Sprinkler Impairment Notice for any sprinkler impairment expected to exceed 4 hours — 24 hours ahead when planned, as soon as possible in an emergency.)</li>
   <li>The event is recorded in the <b>Impairment Log</b>: system, times out and restored, precautions and notifications, and who tested and confirmed.</li>
   </ul>
   <div class="card do">The log is not paperwork for its own sake — it is how SDS Lumber proves to the insurer and to DOSH that every impairment was controlled and closed. One line per impairment, planned or emergency, kept at least three years.</div>` }
@@ -247,7 +247,7 @@ function showResult(){
       <div class="cert">
         <div style="font-size:14px;color:var(--gray)">CERTIFICATE OF COMPLETION</div>
         <div class="big">${esc(empName)}</div>
-        <div>Fire Protection Impairment — Supervisor Training v1.0</div>
+        <div>Fire Protection Impairment — Supervisor Training v1.1</div>
         <p><b>${dateStr}</b> · Score: <b>${quizScore}/${quiz.length} (${pct}%)</b></p>
         <div style="font-size:14px;margin-top:8px">Your completion code:</div>
         <div class="code">${completionCode}</div>
